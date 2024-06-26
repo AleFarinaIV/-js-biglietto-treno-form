@@ -23,5 +23,9 @@ calculate.addEventListener('click', function () {
     }else {
         console.log(price)
         console.log(name)
+        document.getElementById('price').innerHTML = price
+        document.getElementById('offerType').innerHTML = 'Prezzo Standard'
+        document.getElementById('cabNumber').innerHTML = Math.floor(Math.random() * 11)
+        document.getElementById('codeNumber').innerHTML = Math.floor(Math.random() * 100000)
     }
 })
