@@ -4,18 +4,17 @@ calculate.addEventListener('click', function () {
     let age = document.getElementById('age').value
     let price = kilometres * 0.21
     let name = document.getElementById('name').value
+    document.getElementById('inner-name').innerHTML = name
     if (age === 'minorenne') {
         price = price - (price * 0.2)
         console.log(price)
         console.log(name)
         document.getElementById('price').innerHTML = price
-    }
-    else if (age === 'senior') {
+    }else if (age === 'senior') {
         price = price - (price * 0.4)
         console.log(price)
         console.log(name)
-    }
-    else {
+    }else {
         console.log(price)
         console.log(name)
     }
