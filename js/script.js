@@ -10,6 +10,9 @@ calculate.addEventListener('click', function () {
         console.log(price)
         console.log(name)
         document.getElementById('price').innerHTML = price
+        document.getElementById('offerType').innerHTML = 'Offerta under18'
+        document.getElementById('cabNumber').innerHTML = Math.floor(Math.random() * 11)
+        document.getElementById('codeNumber').innerHTML = Math.floor(Math.random() * 100000)
     }else if (age === 'senior') {
         price = price - (price * 0.4)
         console.log(price)
