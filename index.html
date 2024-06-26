@@ -12,14 +12,29 @@
         <title>BoolTrain</title>
     </head>
     <body>
-        <input type="text">
-        <input type="number" id="kilometres">
-        <select name="" id="age">
-            <option value="minorenne">Minorenne</option>
-            <option value="adulto">Adulto</option>
-            <option value="senior">Senior(65+)</option>
-        </select>
-        <button id="calculate">Genera</button>
+        <main class="container">
+            <div class="row border">
+                <div class="col-4">
+                    <label for="" class="control-label">Nome e Cognome</label>
+                    <input type="text" class="form-control" name="Name&LastName" id="" placeholder="Nome...">
+                </div>
+                <div class="col-4">
+                    <label for="" class="control-label">km da percorrere</label>
+                    <input type="number" class="form-control" name="km" id="kilometres" placeholder="km...">
+                </div>
+                <div class="col-4">
+                    <label for="" class="control-form">Fascia d'età</label>
+                    <select class="form-select" aria-label="Default select example" id="age">
+                        <option value="minorenne">Minorenne</option>
+                        <option value="adulto">Adulto</option>
+                        <option value="senior">Senior</option>
+                      </select>
+                </div>
+                <div class="row">
+                    <button id="calculate">Genera</button>
+                </div>
+            </div>
+        </main>
         <script type="text/javascript" src="./js/script.js"></script>
     </body>
 </html>

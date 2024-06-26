@@ -11,4 +11,7 @@ calculate.addEventListener('click', function () {
         price = price - (price * 0.4)
         console.log(price)
     }
+    else {
+        console.log(price)
+    }
 })
