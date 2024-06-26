@@ -2,7 +2,9 @@
 
 Scrivere un programma che chieda all’utente:
 1. Il numero di chilometri da percorrere
-2. Età del passeggero Sulla base di queste informazioni dovrà calcolare il prezzo totale del biglietto di viaggio, secondo le seguenti regole:
+2. Età del passeggero 
+
+Sulla base di queste informazioni dovrà calcolare il prezzo totale del biglietto di viaggio, secondo le seguenti regole:
  1. il prezzo del biglietto è definito in base ai km (0.21 € al km)
  2. va applicato uno sconto del 20% per i minorenni
  3. va applicato uno sconto del 40% per gli over 65.
@@ -26,3 +28,22 @@ Solo una volta che il milestone 1 sarà completo e funzionante allora realizzere
 # Nota 
 
 Se non vi sentite particolarmente creativi, questa potrebbe essere un’implementazione da seguire per il secondo milestone. Potete scegliere di implementare una soluzione completamente diversa oppure simile, ma in ogni caso cercate di farla vostra.
+
+# Scomposizione del problema
+
+Situazione: calcolare i prezzi dei biglietti del treno sulla base di kilometri e età dei passeggeri
+
+Dichiarare una variabile
+    Assegnare a questa variabile il valore recuperato dalla form specifica
+
+Dichiarare una seconda variabile
+    Asseganre a questa variabile il valore recuperato dalla form specifica
+
+Calcolare il prezzo totale seguendo delle regole
+    - Il prezzo varierà in base ai kilometri effettuati
+    - Il prezzo varierà in base all'età del passeggero
+        IF età < 18 applicare sconto del 20% sul prezzo del biglietto
+        ELSE If età > 65 applicare sconto del 40%
+        ELSE non applicare nessuno sconto
+
+L'output sarà il prezzo finale del biglietto in forma decimale, con massimo due decimali ad inidicare i centesimi.
