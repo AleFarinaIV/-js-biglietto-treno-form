@@ -7,4 +7,8 @@ calculate.addEventListener('click', function () {
         price = price - (price * 0.2)
         console.log(price)
     }
+    else if (age === 'senior') {
+        price = price - (price * 0.4)
+        console.log(price)
+    }
 })
