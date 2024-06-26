@@ -17,6 +17,9 @@ calculate.addEventListener('click', function () {
         price = price - (price * 0.4)
         console.log(price)
         console.log(name)
+        document.getElementById('offerType').innerHTML = 'Offerta Senior'
+        document.getElementById('cabNumber').innerHTML = Math.floor(Math.random() * 11)
+        document.getElementById('codeNumber').innerHTML = Math.floor(Math.random() * 100000)
     }else {
         console.log(price)
         console.log(name)
