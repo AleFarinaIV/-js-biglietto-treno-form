@@ -9,23 +9,24 @@ calculate.addEventListener('click', function () {
         price = price - (price * 0.2)
         console.log(price)
         console.log(name)
-        document.getElementById('price').innerHTML = price
+        document.getElementById('price').innerHTML = price.toFixed(2)
         document.getElementById('offerType').innerHTML = 'Offerta under18'
-        document.getElementById('cabNumber').innerHTML = Math.floor(Math.random() * 11)
-        document.getElementById('codeNumber').innerHTML = Math.floor(Math.random() * 100000)
+        document.getElementById('cabNumber').innerHTML = Math.floor(Math.random() * 10 + 1)
+        document.getElementById('codeNumber').innerHTML = Math.floor(Math.random() * 90000 + 10000)
     }else if (age === 'senior') {
         price = price - (price * 0.4)
         console.log(price)
         console.log(name)
+        document.getElementById('price').innerHTML = price.toFixed(2)
         document.getElementById('offerType').innerHTML = 'Offerta Senior'
-        document.getElementById('cabNumber').innerHTML = Math.floor(Math.random() * 11)
-        document.getElementById('codeNumber').innerHTML = Math.floor(Math.random() * 100000)
+        document.getElementById('cabNumber').innerHTML = Math.floor(Math.random() * 10 + 1)
+        document.getElementById('codeNumber').innerHTML = Math.floor(Math.random() * 90000 + 10000)
     }else {
         console.log(price)
         console.log(name)
-        document.getElementById('price').innerHTML = price
+        document.getElementById('price').innerHTML = price.toFixed(2)
         document.getElementById('offerType').innerHTML = 'Prezzo Standard'
-        document.getElementById('cabNumber').innerHTML = Math.floor(Math.random() * 11)
-        document.getElementById('codeNumber').innerHTML = Math.floor(Math.random() * 100000)
+        document.getElementById('cabNumber').innerHTML = Math.floor(Math.random() * 10 + 1)
+        document.getElementById('codeNumber').innerHTML = Math.floor(Math.random() * 90000 + 10000)
     }
 })

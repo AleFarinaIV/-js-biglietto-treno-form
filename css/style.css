@@ -8,6 +8,8 @@ body {
     height: 100svh;
     width: 100svw;
     background-image: url(../img/wood-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 .cyan-bg {
